@@ -3,21 +3,69 @@
 <html>
   <head>
     <title>Hello!</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <style>
+      #avatar {
+        border-radius: 50% !important;
+      }
+
+      #parallax-image {
+        width: 100%;
+      }
+
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Patricio Güereque</h1>
-	  <img src="https://i.imgur.com/heAyQFp.jpg" width="200px"/>
-      <p>
-        My name is <strong>Patricio Güereque</strong>. I'm a Computer Science
-        undergraduate that is passionate about learning new technologies.
-        <span><address>Contact: <a href"mailto:contacto@patoguereque.com">contacto@patoguereque.com</a></address></span>
-      </p>
-    </header>
-    <main>
-      <section>
-        <div>
-          <h2>Experience</h2>
+    <div class="pink lighten-5">
+      <header class="container">
+        <h1>Patricio Güereque</h1>
+        <div class="row valign-wrapper">
+          <div class="col m4 s12">
+            <img
+              id="avatar"
+              class="responsive-img"
+              src="https://avatars.githubusercontent.com/u/19732552?s=400&u=c27afa8f74437c81d4bdeb3b5e4e6423d6139fe3"
+            />
+          </div>
+          <div class="col m8 s12">
+            <p>
+              My name is <strong>Patricio Güereque</strong>. I'm a Computer
+              Science undergraduate that is passionate about learning new
+              technologies. I also like taking pictures ocassionally.
+              <span
+                ><address>
+                  Contact:
+                  <a href="mailto:contacto@patoguereque.com"
+                    >contacto@patoguereque.com</a
+                  >
+                </address></span
+              >
+            </p>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img id="parallax-image" src="fondo.jpg" /></div>
+    </div>
+    <main class="container">
+      <section class="row">
+        <h2>Experience</h2>
+        <div class="col m6 s12">
           <strong>Softtek</strong>
           <br />
           <i>Application Developer Summer Internship (2016)</i>
@@ -27,7 +75,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="col m6 s12">
           <strong>Accenture</strong>
           <br />
           <i>Application Developer Summer Internship (2019)</i>
@@ -39,7 +87,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="col m6 s12">
           <strong>MG Capital</strong>
           <br />
           <i>Software Engineer (2017 - 2019)</i>
@@ -66,13 +114,10 @@
           </ul>
         </div>
 
-        <div>
-          <p>
-            <strong>MG Capital</strong>
-            <br />
-            <i>Software Engineer and Devops (2019 - present)</i>
-            <br />
-          </p>
+        <div class="col m6 s12">
+          <strong>MG Capital</strong>
+          <br />
+          <i>Software Engineer and Devops (2019 - present)</i>
           <ul>
             <li>Deploys policies on the Active Directory domain</li>
             <li>Configured and maintains internal Gitlab</li>
@@ -84,33 +129,123 @@
           </ul>
         </div>
       </section>
-      <section>
+      <div class="row">
         <h2>Comfortable Languages</h2>
-        <ul>
-          <li>Java</li>
-          <li>C++</li>
-          <li>C</li>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>JSX</li>
-          <li>Visual Basic</li>
-          <li>SQL</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Technologies</h2>
-        <ul>
-          <li>Docker</li>
-          <li>Kubernetes</li>
-          <li>Git</li>
-          <li>Linux</li>
-          <li>Maven</li>
-        </ul>
-      </section>
+        <section>
+          <div class="col s6">
+            <ul>
+              <li>
+                Java
+                <div class="progress">
+                  <div class="determinate" style="width: 100%"></div>
+                </div>
+              </li>
+              <li>
+                C++
+                <div class="progress">
+                  <div class="determinate" style="width: 70%"></div>
+                </div>
+              </li>
+              <li>
+                C
+                <div class="progress">
+                  <div class="determinate" style="width: 60%"></div>
+                </div>
+              </li>
+              <li>
+                JavaScript
+                <div class="progress">
+                  <div class="determinate" style="width: 90%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col s6">
+            <ul>
+              <li>
+                TypeScript
+                <div class="progress">
+                  <div class="determinate" style="width: 90%"></div>
+                </div>
+              </li>
+              <li>
+                JSX
+                <div class="progress">
+                  <div class="determinate" style="width: 80%"></div>
+                </div>
+              </li>
+              <li>
+                Visual Basic
+                <div class="progress">
+                  <div class="determinate" style="width: 100%"></div>
+                </div>
+              </li>
+              <li>
+                SQL
+                <div class="progress">
+                  <div class="determinate" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <section>
+          <h2>Technologies</h2>
+          <div class="col s6">
+            <ul>
+              <li>
+                Git
+                <div class="progress">
+                  <div class="determinate" style="width: 100%"></div>
+                </div>
+              </li>
+              <li>
+                Linux
+                <div class="progress">
+                  <div class="determinate" style="width: 90%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col s6">
+            <ul>
+              <li>
+                Docker
+                <div class="progress">
+                  <div class="determinate" style="width: 100%"></div>
+                </div>
+              </li>
+              <li>
+                Kubernetes
+                <div class="progress">
+                  <div class="determinate" style="width: 60%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer>
-      <span>©</span> 2021 Patricio Güereque.
-      <i>This homework does not reflect my knowledge of web development.</i>
+    <footer class="page-footer pink lighten-5 black-text">
+      <div class="container">
+        <div class="row">
+          <span>©</span> 2021 Patricio Güereque.
+          <i>This homework does not reflect my knowledge of web development.</i>
+        </div>
+      </div>
     </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".parallax");
+        var instances = M.Parallax.init(elems, {});
+      });
+    </script>
   </body>
 </html>
