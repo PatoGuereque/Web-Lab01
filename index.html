@@ -11,6 +11,7 @@
 
     <style>
       #avatar {
+        margin-top: 35px;
         border-radius: 50% !important;
       }
 
@@ -20,11 +21,25 @@
       }
 
       .parallax-container {
-        height: 350px;
+        height: 300px;
       }
 
       .list-item > li {
         list-style-type: initial !important;
+        margin-left: 20px;
+      }
+
+      .caption-text {
+        margin-top: 256px;
+        background-color: #4444449e;
+        padding-bottom: 5px;
+        padding-top: 1px;
+      }
+
+      h2 {
+        margin-bottom: 50px;
+        text-decoration: underline;
+        text-decoration-color: #fce4ec;
       }
 
       body {
@@ -41,16 +56,16 @@
   <body>
     <div class="pink lighten-5">
       <header class="container">
-        <h1 class="center">Patricio Güereque</h1>
-        <div class="row valign-wrapper">
-          <div class="col m4 s12">
+        <div class="row">
+          <div class="col m3 s12 center">
             <img
               id="avatar"
               class="responsive-img"
               src="https://avatars.githubusercontent.com/u/19732552?s=400&u=c27afa8f74437c81d4bdeb3b5e4e6423d6139fe3"
             />
           </div>
-          <div class="col m8 s12">
+          <div class="col m9 s12 center">
+            <h1>Patricio Güereque</h1>
             <p>
               My name is <strong>Patricio Güereque</strong>. I'm a Computer
               Science undergraduate that is passionate about learning new
@@ -68,16 +83,11 @@
         </div>
       </header>
     </div>
-    <div class="parallax-container">
-      <div class="parallax">
-        <img id="parallax-image" src="fondo.jpg" />
-      </div>
-    </div>
     <main class="container">
       <section class="row">
         <h2 class="center">Experience</h2>
         <div class="col m6 s12">
-          <div class="center">
+          <div>
             <h5><strong>Softtek</strong></h5>
             <i>Application Developer Summer Internship (2016)</i>
           </div>
@@ -88,7 +98,7 @@
         </div>
 
         <div class="col m6 s12">
-          <div class="center">
+          <div>
             <h5><strong>Accenture</strong></h5>
             <i>Application Developer Summer Internship (2019)</i>
           </div>
@@ -101,7 +111,7 @@
         </div>
 
         <div class="col m6 s12">
-          <div class="center">
+          <div>
             <h5><strong>MG Capital</strong></h5>
             <i>Software Engineer (2017 - 2019)</i>
           </div>
@@ -129,7 +139,7 @@
         </div>
 
         <div class="col m6 s12">
-          <div class="center">
+          <div>
             <h5><strong>MG Capital</strong></h5>
             <i>Software Engineer and Devops (2019 - present)</i>
           </div>
@@ -244,12 +254,19 @@
         </section>
       </div>
     </main>
+    <div class="parallax-container">
+      <div class="parallax">
+        <img id="parallax-image" src="fondo.jpg" />
+        <div class="caption center-align caption-text">
+          <h6 class="light grey-text text-lighten-3">
+            Picture taken at Cozumel
+          </h6>
+        </div>
+      </div>
+    </div>
     <footer class="page-footer pink lighten-5 black-text">
       <div class="container">
-        <div class="row">
-          <span>©</span> 2021 Patricio Güereque.
-          <i>This homework does not reflect my knowledge of web development.</i>
-        </div>
+        <div class="row"><span>©</span> 2021 Patricio Güereque</div>
       </div>
     </footer>
 
