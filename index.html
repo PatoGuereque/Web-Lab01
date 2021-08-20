@@ -16,6 +16,15 @@
 
       #parallax-image {
         width: 100%;
+        z-index: -1;
+      }
+
+      .parallax-container {
+        height: 350px;
+      }
+
+      .list-item > li {
+        list-style-type: initial !important;
       }
 
       body {
@@ -30,7 +39,7 @@
     </style>
   </head>
   <body>
-    <div class="pink lighten-5">
+    <div class="lighten-5">
       <header class="container">
         <h1>Patricio Güereque</h1>
         <div class="row valign-wrapper">
@@ -60,27 +69,31 @@
       </header>
     </div>
     <div class="parallax-container">
-      <div class="parallax"><img id="parallax-image" src="fondo.jpg" /></div>
+      <div class="parallax">
+        <img id="parallax-image" src="fondo.jpg" />
+      </div>
     </div>
     <main class="container">
       <section class="row">
         <h2>Experience</h2>
         <div class="col m6 s12">
-          <strong>Softtek</strong>
-          <br />
-          <i>Application Developer Summer Internship (2016)</i>
-          <ul>
+          <div class="center">
+            <h5><strong>Softtek</strong></h5>
+            <i>Application Developer Summer Internship (2016)</i>
+          </div>
+          <ul class="list-item">
             <li>Java backend developer using spring</li>
             <li>Learned about sessions and tokens</li>
           </ul>
         </div>
 
         <div class="col m6 s12">
-          <strong>Accenture</strong>
-          <br />
-          <i>Application Developer Summer Internship (2019)</i>
-          <ul>
-            <li>
+          <div class="center">
+            <h5><strong>Accenture</strong></h5>
+            <i>Application Developer Summer Internship (2019)</i>
+          </div>
+          <ul class="list-item">
+            <li class>
               Full-stack developer for a facial recognition demo using angular
             </li>
             <li>Showcased at the Girls Who Code event hosted by the company</li>
@@ -88,10 +101,11 @@
         </div>
 
         <div class="col m6 s12">
-          <strong>MG Capital</strong>
-          <br />
-          <i>Software Engineer (2017 - 2019)</i>
-          <ul>
+          <div class="center">
+            <h5>MG Capital</h5>
+            <i>Software Engineer (2017 - 2019)</i>
+          </div>
+          <ul class="list-item">
             <li>Application developer and designer using JavaFX</li>
             <li>Process automation with batch scripting and excel macros</li>
             <li>
@@ -115,10 +129,11 @@
         </div>
 
         <div class="col m6 s12">
-          <strong>MG Capital</strong>
-          <br />
-          <i>Software Engineer and Devops (2019 - present)</i>
-          <ul>
+          <div class="center">
+            <h5>MG Capital</h5>
+            <i>Software Engineer and Devops (2019 - present)</i>
+          </div>
+          <ul class="list-item">
             <li>Deploys policies on the Active Directory domain</li>
             <li>Configured and maintains internal Gitlab</li>
             <li>Manage internal Kubernetes cluster</li>
